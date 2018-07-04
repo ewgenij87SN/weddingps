@@ -1,0 +1,100 @@
+.portfolio
+	height 1160px
+	background url('../img/general/portfolio-bg.jpg') 0 0 no-repeat
+	background-size cover
+
+	&:before
+		content ''
+		display block
+		position absolute
+		top -20px
+		left 0
+		right 0
+		width 100%
+		height 21px
+		background url('../img/general/wave-top-portfolio.png') 0 0 no-repeat 
+		
+	&:after
+		content ''
+		display block
+		position absolute
+		bottom -20px
+		left 0
+		right 0
+		height 21px
+		background url('../img/general/wave-bottom-portfolio.png') 0 0 no-repeat 
+	
+		
+.portfolio-item__wrap
+	width 100%
+	max-width 975px
+	margin 0 auto
+
+.portfolio-item__line
+	display flex
+	
+.portfolio-item__center
+	display flex
+	flex-wrap wrap
+	position relative
+	
+.portfolio-item
+	position relative
+	width 292px
+	height 230px
+	background-size cover
+	cursor pointer
+	
+	&.portfolio-item--width
+		width 390px	
+			
+	&.portfolio-item--height
+		position absolute
+		right 1px
+		top 0
+		height 460px
+		
+	&:hover
+		
+		.portfolio-item__descr
+			opacity 1
+		
+.portfolio-item__search
+	position absolute
+	right 10px
+	bottom 10px
+	width 25px
+	height 25px
+	background-color mainColor
+	border 1px solid #fff
+	border-radius 50%
+	z-index 1
+	
+	&:after
+		content ''
+		position absolute
+		top 5px
+		left 5px
+		display block
+		width 12px
+		height 12px
+		background url('../img/svg/search.svg') 0 0 no-repeat
+		background-size 100%
+	 
+.portfolio-item__descr
+	position absolute
+	bottom 0
+	left 0
+	right 0
+	padding 15px 40px 15px 10px
+	background-color mainColor
+	color #FFF  
+	text-align right
+	opacity 0
+	transition all linear .2s
+	
+.portfolio-instagramm
+	margin-top 20px
+	text-align center
+	font-size 28px
+	color mainColor
